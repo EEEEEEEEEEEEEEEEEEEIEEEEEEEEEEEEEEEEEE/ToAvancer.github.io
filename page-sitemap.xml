@@ -7,6 +7,13 @@
     </url>
     
     <url>
+        <loc>http://yoursite.com/guestbook/</loc>
+        <lastmod>2018-01-30T16:33:49.050Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>http://yoursite.com/categories/</loc>
         <lastmod>2018-01-30T05:47:38.648Z</lastmod>
         <changefreq>weekly</changefreq>
