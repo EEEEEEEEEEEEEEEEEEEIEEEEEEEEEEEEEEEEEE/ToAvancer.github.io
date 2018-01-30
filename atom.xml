@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Welcome to the world of ToAvancer</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-01-30T07:53:27.168Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>ToAvancer</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>实验用</title>
+    <link href="http://yoursite.com/2018/01/30/new-article/"/>
+    <id>http://yoursite.com/2018/01/30/new-article/</id>
+    <published>2018-01-30T07:49:01.000Z</published>
+    <updated>2018-01-30T07:53:27.168Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;
+      
+    
+    </summary>
+    
+      <category term="git" scheme="http://yoursite.com/categories/git/"/>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>关于用hexo和github建立博客的相关收录</title>
+    <link href="http://yoursite.com/2018/01/29/My%20blog/"/>
+    <id>http://yoursite.com/2018/01/29/My blog/</id>
+    <published>2018-01-29T10:30:00.000Z</published>
+    <updated>2018-01-30T13:38:08.957Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>附：刚接触网页制作的萌新= =各种对小坑（虽然多半是自己做的大死）的吐槽……</p><h2 id="请大神轻喷谢谢"><a href="#请大神轻喷谢谢" class="headerlink" title="请大神轻喷谢谢=_="></a>请大神轻喷谢谢=_=</h2><h1 id="我基本是看着这个来做的"><a href="#我基本是看着这个来做的" class="headerlink" title="我基本是看着这个来做的"></a>我基本是看着这个来做的</h1><p><a href="https://www.jianshu.com/p/189fd945f38f" target="_blank" rel="noopener">搭建个人博客-hexo+github详细完整步骤</a></p><p>容易卡的点：文中[3、在_config.yml,进行基础配置]，它那里写了个 theme:landscape 但实际上如果保留这个数据来进行下面的hexo g和hexo s 就是一副GG……然后这时候就要学会看电脑反馈给我们的反馈信息了= =它当时那里老跟我讲12行有毛病。我OS：没有啊= =完全按照教程打的啊，一个字都没打错啊QAQ后来把theme:landscape这多余的一行删掉就好了。（顺带吐槽一下基本配置文件_config.yml的严格程度令人发指，多一个少一个空格多一个回车分分钟被打回= =【所以要学会看电脑反馈的信息这很重要！！！】）</p><hr><h1 id="头像篇"><a href="#头像篇" class="headerlink" title="头像篇"></a>头像篇</h1><hr><p>终于把我林的头像搬上来了/擦汗<br>附：头像上传试了那么多个，哪个比较有效呢？<br>当然是： <a href="https://www.cnblogs.com/debugzer0/articles/5461804.html" target="_blank" rel="noopener">头像教程贴</a></p><h2 id="设置右侧栏头像"><a href="#设置右侧栏头像" class="headerlink" title="设置右侧栏头像"></a>设置右侧栏头像</h2><p>编辑站点配置文件，添加如下内容</p><p>avatar: your avatar url<br>其中，your avatar url可以是<br>(1) 完整的互联网URL，你可以先将设置的头像图片放到图床上；<br>(2) 本地地址：如/upload/image/avatar.png (你需要将avatar.png文件放在/站点目录/source/upload/image/里面)。</p><h2 id="注意：如果想要把头像弄上github的话，就一定要用url，"><a href="#注意：如果想要把头像弄上github的话，就一定要用url，" class="headerlink" title="注意：如果想要把头像弄上github的话，就一定要用url，"></a>注意：如果想要把头像弄上github的话，就一定要用url，</h2><p>不知道你用本地地址行不行，反正我用本地地址不行= =（也有可能是我操作失误的原因）。</p><h1 id="设置favicon图标"><a href="#设置favicon图标" class="headerlink" title="设置favicon图标"></a>设置favicon图标</h1><p>Step 1:<br>首先要有一个常见格式名(如.jpg, .png等)的图片作为备选favicon，选择一个favicon制作网站完成制作，例如比特虫是一个免费的在线制作ico图标网站。</p><p>Step 2:<br>参考：<br>More info: <a href="http://blog.csdn.net/ganzhilin520/article/details/79048034" target="_blank" rel="noopener">.ico教程贴</a></p><p>实际上还是要改next的主题配置参数。<br>因为前面头像增加要用url的地址= =一度想要令.ico文件搞个url地址又去图床又去什么博客啥的强行弄个url= =<br>实际上发现是没必要的：）.ico文件只要本机地址就好了。不知道头像能不能也这样呢？算了我还是懒得搞了。有林林的头像我已经很满足了嘻嘻(#^.^#)</p><h1 id="侧边栏音乐播放器"><a href="#侧边栏音乐播放器" class="headerlink" title="侧边栏音乐播放器"></a>侧边栏音乐播放器</h1><p>参考： <a href="https://juejin.im/post/58eb2fd2a0bb9f006928f8c7" target="_blank" rel="noopener">hexo高阶教程：next主题优化之加入网易云音乐、网易云跟帖、炫酷动态背景、自定义样式，打造属于你自己的定制化博客</a></p><p>在hexo\themes\next\layout_macro\sidebar.swig中自己找个位置插入：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=<span class="string">"music163player"</span>&gt;</span><br><span class="line">&lt;iframe frameborder=<span class="string">"no"</span> border=<span class="string">"0"</span> marginwidth=<span class="string">"0"</span> marginheight=<span class="string">"0"</span> width=330 height=86 src=<span class="string">"//music.163.com/outchain/player?type=3&amp;id=1367602647&amp;auto=0&amp;height=66"</span>&gt;&lt;/iframe&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure><p>注意一下要放的【外放链接器】网易给的代码</p><h1 id="菜单设置"><a href="#菜单设置" class="headerlink" title="菜单设置"></a>菜单设置</h1><p>请参考上面的网址也有教= =</p><h1 id="文章加tag的操作"><a href="#文章加tag的操作" class="headerlink" title="文章加tag的操作"></a>文章加tag的操作</h1><p>正确操作↓：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 关于用hexo和github建立博客的相关收录</span><br><span class="line">date: 2018-01-29 18:30</span><br><span class="line">tags: [git]</span><br><span class="line">categories: git</span><br><span class="line"></span><br><span class="line">---</span><br></pre></td></tr></table></figure></p><p>一开始做了大死把头部声明（？）的一部分用分割线划开了= =然后各种试法都没办法给文章加tag</p><h1 id="hexo文件上传到github"><a href="#hexo文件上传到github" class="headerlink" title="hexo文件上传到github"></a>hexo文件上传到github</h1><p>绑定完github账号就在想= =Emmmmmm……怎么传上去呢= =<br>然后又花一点时间分清localhost:4000和toavancer.github.io……<br>如果要在本地看就输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></p><p>上传到github要先用（大概= =<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure></p><p>再用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure></p><h1 id="第三方评论系统的引用"><a href="#第三方评论系统的引用" class="headerlink" title="第三方评论系统的引用"></a>第三方评论系统的引用</h1><p>参考：<a href="https://segmentfault.com/a/1190000010104610" target="_blank" rel="noopener">网易云跟帖关闭服务后转移到来必力</a><br>搞这个玩意心里真的写满敲你吗= =<br>一开始找的某网页版本是叫我用Disqus= =结果搞了一会儿就是进不去，后来上百度搜，好吧好吧墙外之物：）<br>那么后来就去找多说，听说多说还行，好的，倒闭预定：）<br>然后根据某个帖子就去找网易云跟帖……但是……为什么是404？？天真的我以为是我没登录的原因，注册登上去了，又上不去，上百度查好吧又是一个倒闭预定呵呵：）<br>然后根据<a href="https://www.jianshu.com/p/5973c05d7100" target="_blank" rel="noopener">【干货】2个小时教你hexo博客添加评论、打赏、RSS等功能</a>结果这个教程一脸：你改个uid就能用了。我：？？？你仿佛在特意逗我笑<br><a href="https://www.jianshu.com/p/4729e92fddbe" target="_blank" rel="noopener">为next添加友言评论支持</a>搞= =前面还好好的，结果去到教程中途，一脸：我是谁我在哪？为什么教程的HEXO有这个目录，我没有的？？？这么GG的吗？？<br>于是又去找别的= =终于找到了来比力（是不是只有我看到这个想到了巧克力）<br>根据这个UP的推荐<a href="http://muchisan.tk/blog/2018/01/19/Hexo%E5%8D%9A%E5%AE%A2%E9%9B%86%E6%88%90%E6%9D%A5%E5%BF%85%E5%8A%9B%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B/" target="_blank" rel="noopener">【原创】Hexo博客集成来必力评论系统教程</a>再次发生了这是哪的惨案（找不到教程指的文件在哪）</p><p>最后！感谢这个帖子<a href="https://segmentfault.com/a/1190000010104610" target="_blank" rel="noopener">网易云跟帖关闭服务后转移到来必力</a>不过这个教程最后的两步出现了一点问题<br>1.没找到在 layout/_scripts/third-party/comments.swig 文件<br>2.加了：【最后，在 layout/_partials/comments.swig 文件中条件最后追加 LiveRe 插件是否引用的判断逻辑：】 上不了localhost:4000</p><p>附：记得在博客的文件开头加上【comment: true】 才会显示www</p><h1 id="阅读次数增加详见："><a href="#阅读次数增加详见：" class="headerlink" title="阅读次数增加详见："></a>阅读次数增加详见：</h1><p><a href="https://www.jianshu.com/p/5973c05d7100" target="_blank" rel="noopener">添加阅读次数统计</a><br><a href="https://leancloud.cn/" target="_blank" rel="noopener">LeanCloud官网</a><br>不知道为什么key和ID没办法复制- -憋屈地手输了QAQ</p><h1 id="搜索栏增加："><a href="#搜索栏增加：" class="headerlink" title="搜索栏增加："></a>搜索栏增加：</h1><p><a href="https://www.ezlippi.com/blog/2017/02/hexo-search.html" target="_blank" rel="noopener">Hexo博客添加站内搜索</a><br>强烈推荐这个！简单快捷！不用注册第三方网站<br>不过这个教程就是漏了在主题配置文件用ctrl+F搜出【local_search:】把enable false 改成true= =<br>坑：<a href="https://www.jianshu.com/p/5973c05d7100" target="_blank" rel="noopener">安装Algolia第三方插件配置搜索</a><br>用这个怎么样都装不上去气死我了：）因为[在Hexo根目录执行hexo algolia来更新Index]更新不了（叹气）</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;附：刚接触网页制作的萌新= =各种对小坑（虽然多半是自己做的大死）的吐槽……&lt;/p&gt;
+&lt;h2 id=&quot;请大神轻喷谢谢&quot;&gt;&lt;a href=&quot;#请大神轻喷谢谢&quot; class=&quot;h
+      
+    
+    </summary>
+    
+      <category term="git" scheme="http://yoursite.com/categories/git/"/>
+    
+    
+      <category term="git" scheme="http://yoursite.com/tags/git/"/>
+    
+      <category term="收录" scheme="http://yoursite.com/tags/%E6%94%B6%E5%BD%95/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="blog" scheme="http://yoursite.com/tags/blog/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/01/28/hello-world/"/>
+    <id>http://yoursite.com/2018/01/28/hello-world/</id>
+    <published>2018-01-28T03:05:17.395Z</published>
+    <updated>2018-01-28T03:05:17.395Z</updated>
+    
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is 
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
