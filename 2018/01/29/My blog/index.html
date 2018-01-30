@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Welcome to the world of ToAvancer">
 <meta property="og:description" content="附：刚接触网页制作的萌新= =各种对小坑（虽然多半是自己做的大死）的吐槽…… 请大神轻喷谢谢=_=我基本是看着这个来做的搭建个人博客-hexo+github详细完整步骤 容易卡的点：文中[3、在_config.yml,进行基础配置]，它那里写了个 theme:landscape 但实际上如果保留这个数据来进行下面的hexo g和hexo s 就是一副GG……然后这时候就要学会看电脑反馈给我们的反">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-30T07:36:44.206Z">
+<meta property="og:updated_time" content="2018-01-30T09:17:45.356Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于用hexo和github建立博客的相关收录">
 <meta name="twitter:description" content="附：刚接触网页制作的萌新= =各种对小坑（虽然多半是自己做的大死）的吐槽…… 请大神轻喷谢谢=_=我基本是看着这个来做的搭建个人博客-hexo+github详细完整步骤 容易卡的点：文中[3、在_config.yml,进行基础配置]，它那里写了个 theme:landscape 但实际上如果保留这个数据来进行下面的hexo g和hexo s 就是一副GG……然后这时候就要学会看电脑反馈给我们的反">
@@ -374,6 +374,8 @@
 <h1 id="hexo文件上传到github"><a href="#hexo文件上传到github" class="headerlink" title="hexo文件上传到github"></a>hexo文件上传到github</h1><p>绑定完github账号就在想= =Emmmmmm……怎么传上去呢= =<br>然后又花一点时间分清localhost:4000和toavancer.github.io……<br>如果要在本地看就输入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure></p>
 <p>上传到github要先用（大概= =<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure></p>
 <p>再用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
+<h1 id="第三方评论系统的引用"><a href="#第三方评论系统的引用" class="headerlink" title="第三方评论系统的引用"></a>第三方评论系统的引用</h1><p>参考：<a href="https://segmentfault.com/a/1190000010104610" target="_blank" rel="noopener">网易云跟帖关闭服务后转移到来必力</a><br>搞这个玩意心里真的写满敲你吗= =<br>一开始找的某网页版本是叫我用Disqus= =结果搞了一会儿就是进不去，后来上百度搜，好吧好吧墙外之物：）<br>那么后来就去找多说，听说多说还行，好的，倒闭预定：）<br>然后根据某个帖子就去找网易云跟帖……但是……为什么是404？？天真的我以为是我没登录的原因，注册登上去了，又上不去，上百度查好吧又是一个倒闭预定呵呵：）<br>然后根据<a href="https://www.jianshu.com/p/5973c05d7100" target="_blank" rel="noopener">【干货】2个小时教你hexo博客添加评论、打赏、RSS等功能</a>结果这个教程一脸：你改个uid就能用了。我：？？？你仿佛在特意逗我笑<br><a href="https://www.jianshu.com/p/4729e92fddbe" target="_blank" rel="noopener">为next添加友言评论支持</a>搞= =前面还好好的，结果去到教程中途，一脸：我是谁我在哪？为什么教程的HEXO有这个目录，我没有的？？？这么GG的吗？？<br>于是又去找别的= =终于找到了来比力（是不是只有我看到这个想到了巧克力）<br>根据这个UP的推荐<a href="http://muchisan.tk/blog/2018/01/19/Hexo%E5%8D%9A%E5%AE%A2%E9%9B%86%E6%88%90%E6%9D%A5%E5%BF%85%E5%8A%9B%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B/" target="_blank" rel="noopener">【原创】Hexo博客集成来必力评论系统教程</a>再次发生了这是哪的惨案（找不到教程指的文件在哪）</p>
+<p>最后！感谢这个帖子<a href="https://segmentfault.com/a/1190000010104610" target="_blank" rel="noopener">网易云跟帖关闭服务后转移到来必力</a>不过这个教程最后的两步出现了一点问题<br>1.没找到在 layout/_scripts/third-party/comments.swig 文件<br>2.加了：【最后，在 layout/_partials/comments.swig 文件中条件最后追加 LiveRe 插件是否引用的判断逻辑：】 上不了localhost:4000</p>
 
       
     </div>
@@ -457,7 +459,6 @@
     </div>
 
   
-
 
 
         </div>
@@ -565,7 +566,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#请大神轻喷谢谢"><span class="nav-number">1.</span> <span class="nav-text">请大神轻喷谢谢=_=</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#我基本是看着这个来做的"><span class="nav-number"></span> <span class="nav-text">我基本是看着这个来做的</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#头像篇"><span class="nav-number"></span> <span class="nav-text">头像篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#设置右侧栏头像"><span class="nav-number">1.</span> <span class="nav-text">设置右侧栏头像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意：如果想要把头像弄上github的话，就一定要用url，"><span class="nav-number">2.</span> <span class="nav-text">注意：如果想要把头像弄上github的话，就一定要用url，</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置favicon图标"><span class="nav-number"></span> <span class="nav-text">设置favicon图标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#侧边栏音乐播放器"><span class="nav-number"></span> <span class="nav-text">侧边栏音乐播放器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#菜单设置"><span class="nav-number"></span> <span class="nav-text">菜单设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文章加tag的操作"><span class="nav-number"></span> <span class="nav-text">文章加tag的操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo文件上传到github"><span class="nav-number"></span> <span class="nav-text">hexo文件上传到github</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#请大神轻喷谢谢"><span class="nav-number">1.</span> <span class="nav-text">请大神轻喷谢谢=_=</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#我基本是看着这个来做的"><span class="nav-number"></span> <span class="nav-text">我基本是看着这个来做的</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#头像篇"><span class="nav-number"></span> <span class="nav-text">头像篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#设置右侧栏头像"><span class="nav-number">1.</span> <span class="nav-text">设置右侧栏头像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意：如果想要把头像弄上github的话，就一定要用url，"><span class="nav-number">2.</span> <span class="nav-text">注意：如果想要把头像弄上github的话，就一定要用url，</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置favicon图标"><span class="nav-number"></span> <span class="nav-text">设置favicon图标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#侧边栏音乐播放器"><span class="nav-number"></span> <span class="nav-text">侧边栏音乐播放器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#菜单设置"><span class="nav-number"></span> <span class="nav-text">菜单设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文章加tag的操作"><span class="nav-number"></span> <span class="nav-text">文章加tag的操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo文件上传到github"><span class="nav-number"></span> <span class="nav-text">hexo文件上传到github</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第三方评论系统的引用"><span class="nav-number"></span> <span class="nav-text">第三方评论系统的引用</span></a></div>
             
 
           </div>
