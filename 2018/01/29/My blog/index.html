@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Welcome to the world of ToAvancer">
 <meta property="og:description" content="附：刚接触网页制作的萌新= =各种对小坑（虽然多半是自己做的大死）的吐槽……并没有觉得dalao们的教程做得不好，只是为了加个功能翻了不少教程走了不少歪路= =可能因为有些dalao下的hexo和next主题和我下的版本略有不同，所以会出现教程的文件而我没有的尴尬情况==……此建博教程仅供参考，至少20180128-20180131的这段时间我是这样搭的== 请dalao轻喷谢谢QAQ我基本是看">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-30T16:38:22.281Z">
+<meta property="og:updated_time" content="2018-01-31T01:44:02.828Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于用hexo和github建立博客的相关收录">
 <meta name="twitter:description" content="附：刚接触网页制作的萌新= =各种对小坑（虽然多半是自己做的大死）的吐槽……并没有觉得dalao们的教程做得不好，只是为了加个功能翻了不少教程走了不少歪路= =可能因为有些dalao下的hexo和next主题和我下的版本略有不同，所以会出现教程的文件而我没有的尴尬情况==……此建博教程仅供参考，至少20180128-20180131的这段时间我是这样搭的== 请dalao轻喷谢谢QAQ我基本是看">
@@ -223,12 +223,12 @@
         </li>
       
         
-        <li class="menu-item menu-item-留言板">
+        <li class="menu-item menu-item-留言">
           <a href="/guestbook/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-comments"></i> <br />
             
-            留言板
+            留言
           </a>
         </li>
       
@@ -415,6 +415,9 @@
 <p>在hexo\themes\next\layout_macro\sidebar.swig中自己找个位置插入：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=<span class="string">"music163player"</span>&gt;</span><br><span class="line">&lt;iframe frameborder=<span class="string">"no"</span> border=<span class="string">"0"</span> marginwidth=<span class="string">"0"</span> marginheight=<span class="string">"0"</span> width=330 height=86 src=<span class="string">"//music.163.com/outchain/player?type=3&amp;id=1367602647&amp;auto=0&amp;height=66"</span>&gt;&lt;/iframe&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 <p>注意一下要放的【外放链接器】网易给的代码</p>
+<h2 id="留言板放置音乐"><a href="#留言板放置音乐" class="headerlink" title="留言板放置音乐"></a>留言板放置音乐</h2><p><a href="http://tc9011.com/2016/12/24/hexo%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90%E3%80%81high%E4%B8%80%E4%B8%8B%E5%8F%8A%E4%B8%80%E4%BA%9B%E5%9D%91/" target="_blank" rel="noopener">hexo添加音乐、high一下及一些坑</a><br>因为想要增加音乐列表功能，所以不能用网易云了= =而且我想听的那些歌恰好网易云没有/VIP= =<br>所以只能用aplayer了= =</p>
+<p>如果想要网易云被权限的音乐，两种方法：<br>1.可以直接在源页码扒外链，对着一堆代码随便找个【.mp3】或者【.m4a】啥的音乐结尾文件后缀名= =然后就能找到了<br>2.找那些什么网易云外链转换网站啥的（百度一搜大把= =</p>
+<p>5sing同理- -（我一开始还想去注册那些小网站上传本地音乐来获得url= =</p>
 <h1 id="菜单设置"><a href="#菜单设置" class="headerlink" title="菜单设置"></a>菜单设置</h1><p>请参考上面的网址也有教= =</p>
 <h1 id="文章加tag的操作"><a href="#文章加tag的操作" class="headerlink" title="文章加tag的操作"></a>文章加tag的操作</h1><p>正确操作↓：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 关于用hexo和github建立博客的相关收录</span><br><span class="line">date: 2018-01-29 18:30</span><br><span class="line">tags: [git]</span><br><span class="line">categories: git</span><br><span class="line"></span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
 <p>一开始做了大死把头部声明（？）的一部分用分割线划开了= =然后各种试法都没办法给文章加tag</p>
@@ -426,7 +429,9 @@
 <p>附：记得在博客的文件开头加上【comment: true】 才会显示www</p>
 <h1 id="阅读次数增加详见："><a href="#阅读次数增加详见：" class="headerlink" title="阅读次数增加详见："></a>阅读次数增加详见：</h1><p><a href="https://www.jianshu.com/p/5973c05d7100" target="_blank" rel="noopener">添加阅读次数统计</a><br><a href="https://leancloud.cn/" target="_blank" rel="noopener">LeanCloud官网</a><br>不知道为什么key和ID没办法复制- -憋屈地手输了QAQ</p>
 <h1 id="搜索栏增加："><a href="#搜索栏增加：" class="headerlink" title="搜索栏增加："></a>搜索栏增加：</h1><p><a href="https://www.ezlippi.com/blog/2017/02/hexo-search.html" target="_blank" rel="noopener">Hexo博客添加站内搜索</a><br>强烈推荐这个！简单快捷！不用注册第三方网站<br>不过这个教程就是漏了在主题配置文件用ctrl+F搜出【local_search:】把enable false 改成true= =<br>坑：<a href="https://www.jianshu.com/p/5973c05d7100" target="_blank" rel="noopener">安装Algolia第三方插件配置搜索</a><br>用这个怎么样都装不上去气死我了：）因为[在Hexo根目录执行hexo algolia来更新Index]更新不了（叹气）</p>
-<h1 id="留言板与音乐"><a href="#留言板与音乐" class="headerlink" title="留言板与音乐"></a>留言板与音乐</h1><p>明天写= =先睡觉压压惊</p>
+<h1 id="留言板与音乐"><a href="#留言板与音乐" class="headerlink" title="留言板与音乐"></a>留言板与音乐</h1><p>20180131更新：<br>参考<a href="http://tc9011.com/2016/11/08/%E8%BF%91%E6%9C%9F%E5%AF%B9HEXO%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%80%E4%BA%9B%E4%BC%98%E5%8C%96/" target="_blank" rel="noopener">添加留言本页面</a><br>大概原理：(安装教程请看网址= =)<br>先cd到博客根目录，然后运行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page guestbook</span><br></pre></td></tr></table></figure></p>
+<p>在主题配置文件找到menu的相关信息设置，加上<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">留言: /guestbook/ || comments</span><br></pre></td></tr></table></figure></p>
+<p>附： 留言: /guestbook/ || 【comments】是放.ico图像的位置= =<br>因为【Font Awesome Icons】和主题啥的配置集成好的，主要输入图像名称就好了。</p>
 
       
     </div>
@@ -624,7 +629,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#请dalao轻喷谢谢QAQ"><span class="nav-number">1.</span> <span class="nav-text">请dalao轻喷谢谢QAQ</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#我基本是看着这个来做的"><span class="nav-number"></span> <span class="nav-text">我基本是看着这个来做的</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#头像篇"><span class="nav-number"></span> <span class="nav-text">头像篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#设置右侧栏头像"><span class="nav-number">1.</span> <span class="nav-text">设置右侧栏头像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意：如果想要把头像弄上github的话，就一定要用url，"><span class="nav-number">2.</span> <span class="nav-text">注意：如果想要把头像弄上github的话，就一定要用url，</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置favicon图标"><span class="nav-number"></span> <span class="nav-text">设置favicon图标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#侧边栏音乐播放器"><span class="nav-number"></span> <span class="nav-text">侧边栏音乐播放器</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#菜单设置"><span class="nav-number"></span> <span class="nav-text">菜单设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文章加tag的操作"><span class="nav-number"></span> <span class="nav-text">文章加tag的操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo文件上传到github"><span class="nav-number"></span> <span class="nav-text">hexo文件上传到github</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第三方评论系统的引用"><span class="nav-number"></span> <span class="nav-text">第三方评论系统的引用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#阅读次数增加详见："><span class="nav-number"></span> <span class="nav-text">阅读次数增加详见：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#搜索栏增加："><span class="nav-number"></span> <span class="nav-text">搜索栏增加：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#留言板与音乐"><span class="nav-number"></span> <span class="nav-text">留言板与音乐</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#请dalao轻喷谢谢QAQ"><span class="nav-number">1.</span> <span class="nav-text">请dalao轻喷谢谢QAQ</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#我基本是看着这个来做的"><span class="nav-number"></span> <span class="nav-text">我基本是看着这个来做的</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#头像篇"><span class="nav-number"></span> <span class="nav-text">头像篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#设置右侧栏头像"><span class="nav-number">1.</span> <span class="nav-text">设置右侧栏头像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意：如果想要把头像弄上github的话，就一定要用url，"><span class="nav-number">2.</span> <span class="nav-text">注意：如果想要把头像弄上github的话，就一定要用url，</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设置favicon图标"><span class="nav-number"></span> <span class="nav-text">设置favicon图标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#侧边栏音乐播放器"><span class="nav-number"></span> <span class="nav-text">侧边栏音乐播放器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#留言板放置音乐"><span class="nav-number">1.</span> <span class="nav-text">留言板放置音乐</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#菜单设置"><span class="nav-number"></span> <span class="nav-text">菜单设置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文章加tag的操作"><span class="nav-number"></span> <span class="nav-text">文章加tag的操作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo文件上传到github"><span class="nav-number"></span> <span class="nav-text">hexo文件上传到github</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第三方评论系统的引用"><span class="nav-number"></span> <span class="nav-text">第三方评论系统的引用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#阅读次数增加详见："><span class="nav-number"></span> <span class="nav-text">阅读次数增加详见：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#搜索栏增加："><span class="nav-number"></span> <span class="nav-text">搜索栏增加：</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#留言板与音乐"><span class="nav-number"></span> <span class="nav-text">留言板与音乐</span></a></div>
             
 
           </div>
