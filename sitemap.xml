@@ -2,22 +2,22 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <sitemap>
-        <loc>http://yoursite.com/post-sitemap.xml</loc>
+        <loc>https://toavancer.github.io/post-sitemap.xml</loc>
+        <lastmod>2018-01-31T03:11:23.004Z</lastmod>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://toavancer.github.io/page-sitemap.xml</loc>
+        <lastmod>2018-01-31T03:10:45.780Z</lastmod>
+    </sitemap>
+
+    <sitemap>
+        <loc>https://toavancer.github.io/category-sitemap.xml</loc>
         <lastmod>2018-01-31T01:44:02.828Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://yoursite.com/page-sitemap.xml</loc>
-        <lastmod>2018-01-30T16:33:49.050Z</lastmod>
-    </sitemap>
-
-    <sitemap>
-        <loc>http://yoursite.com/category-sitemap.xml</loc>
-        <lastmod>2018-01-31T01:44:02.828Z</lastmod>
-    </sitemap>
-
-    <sitemap>
-        <loc>http://yoursite.com/tag-sitemap.xml</loc>
+        <loc>https://toavancer.github.io/tag-sitemap.xml</loc>
         <lastmod>2018-01-31T01:44:02.828Z</lastmod>
     </sitemap>
 
