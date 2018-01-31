@@ -1823,7 +1823,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #cfffc3;
+  background: #2901ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2617,7 +2617,7 @@ pre .javascript .function {
   overflow: hidden;
   padding: 0;
   width: 240px;
-  background: #fff;
+  background: transparent;
   box-shadow: initial;
   border-radius: initial;
 }
@@ -2857,7 +2857,6 @@ pre .javascript .function {
 .sidebar-inner {
   box-sizing: border-box;
   width: 240px;
-  color: #555;
   background: #fff;
   box-shadow: initial;
   border-radius: initial;
@@ -2990,4 +2989,20 @@ pre .javascript .function {
   .post-body {
     text-align: justify;
   }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url("/images/background1.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  #footer a {
+    color: #eee;
+  }
+}
+.main-inner {
+  background: #fff;
+  opacity: 0.8;
 }
