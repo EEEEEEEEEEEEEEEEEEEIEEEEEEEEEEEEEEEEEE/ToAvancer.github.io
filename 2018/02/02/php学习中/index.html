@@ -81,18 +81,22 @@
 
 
 
-<meta name="description" content="创建cookies根据书中的代码是这样的123456&amp;lt;?phpsetcookie(&quot;TMCookie&quot;,&apos;www.mrbccd.com&apos;);setcookie(&quot;TMCookie&quot;,&apos;www.mrbccd.com&apos;,time()+60);setcookie(&quot;TMCookie&quot;,&apos;www.mrbccd.com&apos;,time()+3600,&quot;/tm/&quot;,&quot;.baidu.com&quot;,1);?&amp;gt">
+<meta name="description" content="附：本文内容参照：W3SCHOOL&amp;amp;PHP从入门到精（fang）通(qi) Cookies创建cookies根据书中的代码是这样的123456&amp;lt;?phpsetcookie(&quot;TMCookie&quot;,&apos;www.mrbccd.com&apos;);setcookie(&quot;TMCookie&quot;,&apos;www.mrbccd.com&apos;,time()+60);setcookie(&quot;TMCookie&quot;,&apos;www.mr">
 <meta name="keywords" content="php">
 <meta property="og:type" content="article">
-<meta property="og:title" content="php学习中">
+<meta property="og:title" content="11.Cookies 与 Session">
 <meta property="og:url" content="https://toavancer.github.io/2018/02/02/php学习中/index.html">
 <meta property="og:site_name" content="Welcome to the world of ToAvancer">
-<meta property="og:description" content="创建cookies根据书中的代码是这样的123456&amp;lt;?phpsetcookie(&quot;TMCookie&quot;,&apos;www.mrbccd.com&apos;);setcookie(&quot;TMCookie&quot;,&apos;www.mrbccd.com&apos;,time()+60);setcookie(&quot;TMCookie&quot;,&apos;www.mrbccd.com&apos;,time()+3600,&quot;/tm/&quot;,&quot;.baidu.com&quot;,1);?&amp;gt">
+<meta property="og:description" content="附：本文内容参照：W3SCHOOL&amp;amp;PHP从入门到精（fang）通(qi) Cookies创建cookies根据书中的代码是这样的123456&amp;lt;?phpsetcookie(&quot;TMCookie&quot;,&apos;www.mrbccd.com&apos;);setcookie(&quot;TMCookie&quot;,&apos;www.mrbccd.com&apos;,time()+60);setcookie(&quot;TMCookie&quot;,&apos;www.mr">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-02T10:42:04.015Z">
+<meta property="og:image" content="https://toavancer-1256051997.cos.ap-guangzhou.myqcloud.com/%E6%9C%AC%E6%AC%A1%E8%AE%BF%E9%97%AE.png">
+<meta property="og:image" content="https://toavancer-1256051997.cos.ap-guangzhou.myqcloud.com/%E4%B9%8B%E5%90%8E%E8%AE%BF%E9%97%AE.png">
+<meta property="og:image" content="https://toavancer-1256051997.cos.ap-guangzhou.myqcloud.com/pageviews%3D1.png">
+<meta property="og:updated_time" content="2018-02-02T12:51:41.329Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="php学习中">
-<meta name="twitter:description" content="创建cookies根据书中的代码是这样的123456&amp;lt;?phpsetcookie(&quot;TMCookie&quot;,&apos;www.mrbccd.com&apos;);setcookie(&quot;TMCookie&quot;,&apos;www.mrbccd.com&apos;,time()+60);setcookie(&quot;TMCookie&quot;,&apos;www.mrbccd.com&apos;,time()+3600,&quot;/tm/&quot;,&quot;.baidu.com&quot;,1);?&amp;gt">
+<meta name="twitter:title" content="11.Cookies 与 Session">
+<meta name="twitter:description" content="附：本文内容参照：W3SCHOOL&amp;amp;PHP从入门到精（fang）通(qi) Cookies创建cookies根据书中的代码是这样的123456&amp;lt;?phpsetcookie(&quot;TMCookie&quot;,&apos;www.mrbccd.com&apos;);setcookie(&quot;TMCookie&quot;,&apos;www.mrbccd.com&apos;,time()+60);setcookie(&quot;TMCookie&quot;,&apos;www.mr">
+<meta name="twitter:image" content="https://toavancer-1256051997.cos.ap-guangzhou.myqcloud.com/%E6%9C%AC%E6%AC%A1%E8%AE%BF%E9%97%AE.png">
 
 
 
@@ -128,7 +132,7 @@
 
 
 
-  <title>php学习中 | Welcome to the world of ToAvancer</title>
+  <title>11.Cookies 与 Session | Welcome to the world of ToAvancer</title>
   
 
 
@@ -326,7 +330,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">php学习中</h1>
+          <h1 class="post-title" itemprop="name headline">11.Cookies 与 Session</h1>
         
 
         <div class="post-meta">
@@ -338,7 +342,7 @@
 			  
   <span class="post-updated">
     &nbsp; | &nbsp; 更新于
-    <time itemprop="dateUpdated" datetime="2018-02-02T18:42:04+08:00" content="2018-02-02">
+    <time itemprop="dateUpdated" datetime="2018-02-02T20:51:41+08:00" content="2018-02-02">
       2018-02-02
     </time>
   </span>
@@ -364,7 +368,7 @@
 
           
           
-             <span id="/2018/02/02/php学习中/" class="leancloud_visitors" data-flag-title="php学习中">
+             <span id="/2018/02/02/php学习中/" class="leancloud_visitors" data-flag-title="11.Cookies 与 Session">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -395,9 +399,29 @@
       
 
       
-        <script src="\assets\js\APlayer.min.js"> </script><h1 id="创建cookies"><a href="#创建cookies" class="headerlink" title="创建cookies"></a>创建cookies</h1><p>根据书中的代码是这样的<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">setcookie(<span class="string">"TMCookie"</span>,<span class="string">'www.mrbccd.com'</span>);</span><br><span class="line">setcookie(<span class="string">"TMCookie"</span>,<span class="string">'www.mrbccd.com'</span>,time()+60);</span><br><span class="line">setcookie(<span class="string">"TMCookie"</span>,<span class="string">'www.mrbccd.com'</span>,time()+3600,<span class="string">"/tm/"</span>,<span class="string">".baidu.com"</span>,1);</span><br><span class="line"></span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure></p>
+        <script src="\assets\js\APlayer.min.js"> </script><p>附：本文内容参照：W3SCHOOL&amp;PHP从入门到精（fang）通(qi)</p>
+<h1 id="Cookies"><a href="#Cookies" class="headerlink" title="Cookies"></a>Cookies</h1><h2 id="创建cookies"><a href="#创建cookies" class="headerlink" title="创建cookies"></a>创建cookies</h2><p>根据书中的代码是这样的<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">setcookie(<span class="string">"TMCookie"</span>,<span class="string">'www.mrbccd.com'</span>);</span><br><span class="line">setcookie(<span class="string">"TMCookie"</span>,<span class="string">'www.mrbccd.com'</span>,time()+60);</span><br><span class="line">setcookie(<span class="string">"TMCookie"</span>,<span class="string">'www.mrbccd.com'</span>,time()+3600,<span class="string">"/tm/"</span>,<span class="string">".baidu.com"</span>,1);</span><br><span class="line"></span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure></p>
 <p>书：Cookies文件夹下会自动生成一个Cookie文件，名为administrator@1[1].txt,Cookie的有效期为60S</p>
 <font color="#FF0000"> 尴尬的是找不到这个文件我很心累（躺</font> 
+
+<h2 id="读取Cookie"><a href="#读取Cookie" class="headerlink" title="读取Cookie"></a>读取Cookie</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(!isset(<span class="variable">$_COOKIE</span>[<span class="string">"vis"</span>]))//检测cookie文件是否存在</span><br><span class="line">&#123;</span><br><span class="line">    setcookie(<span class="string">"vis"</span>,date(<span class="string">"y-m-d H:i:s"</span>));//设置一个Cookie变量</span><br><span class="line">    <span class="built_in">echo</span><span class="string">"欢迎您第一次访问网站！"</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">    setcookie(<span class="string">"vis"</span>,date(<span class="string">"y-m-d H:i:s"</span>),time()+60);//设置保存Cookie失效时间的变量</span><br><span class="line">    <span class="built_in">echo</span><span class="string">"您上次访问网站的时间为："</span>.<span class="variable">$_COOKIE</span>[<span class="string">"vis"</span>];</span><br><span class="line">    <span class="built_in">echo</span><span class="string">"&lt;br&gt;"</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"时间为："</span>.date(<span class="string">"y-m-d H:i:s"</span>);</span><br><span class="line"></span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://toavancer-1256051997.cos.ap-guangzhou.myqcloud.com/%E6%9C%AC%E6%AC%A1%E8%AE%BF%E9%97%AE.png" alt="第一次访问"><br><img src="https://toavancer-1256051997.cos.ap-guangzhou.myqcloud.com/%E4%B9%8B%E5%90%8E%E8%AE%BF%E9%97%AE.png" alt="再次访问"></p>
+<p>##如何删除 cookie？<br>当删除 cookie 时，您应当使过期日期变更为过去的时间点。</p>
+<p>删除的例子：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php </span><br><span class="line">// <span class="built_in">set</span> the expiration date to one hour ago</span><br><span class="line">setcookie(<span class="string">"user"</span>, <span class="string">""</span>, time()-3600);</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure></p>
+<h1 id="Session"><a href="#Session" class="headerlink" title="Session"></a>Session</h1><h2 id="session的含义"><a href="#session的含义" class="headerlink" title="session的含义"></a>session的含义</h2><p>PHP session 变量用于存储有关用户会话的信息，或更改用户会话的设置。Session 变量保存的信息是单一用户的，并且可供应用程序中的所有页面使用。</p>
+<p>PHP Session 变量<br>当您运行一个应用程序时，您会打开它，做些更改，然后关闭它。这很像一次会话。计算机清楚你是谁。它知道你何时启动应用程序，并在何时终止。但是在因特网上，存在一个问题：服务器不知道你是谁以及你做什么，这是由于 HTTP 地址不能维持状态。</p>
+<p>通过在服务器上存储用户信息以便随后使用，PHP session 解决了这个问题（比如用户名称、购买商品等）。不过，会话信息是临时的，在用户离开网站后将被删除。如果您需要永久储存信息，可以把数据存储在数据库中。</p>
+<p>Session 的工作机制是：为每个访问者创建一个唯一的 id (UID)，并基于这个 UID 来存储变量。UID 存储在 cookie 中，亦或通过 URL 进行传导。</p>
+<h2 id="开始PHPsession"><a href="#开始PHPsession" class="headerlink" title="开始PHPsession"></a>开始PHPsession</h2><p>在您把用户信息存储到 PHP session 中之前，首先必须启动会话。</p>
+<p>注释：session_start() 函数必须位于 <html> 标签之前：</html></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php session_start(); ?&gt;</span><br><span class="line"></span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="储存Session变量"><a href="#储存Session变量" class="headerlink" title="储存Session变量"></a>储存Session变量</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">session_start();</span><br><span class="line">// store session data</span><br><span class="line"><span class="variable">$_SESSION</span>[<span class="string">'views'</span>]=1;</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line">//retrieve session data</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Pageviews="</span>. <span class="variable">$_SESSION</span>[<span class="string">'views'</span>];</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>输出结果为：</p>
+<p><img src="https://toavancer-1256051997.cos.ap-guangzhou.myqcloud.com/pageviews%3D1.png" alt="储存session变量"></p>
+<p>如果session存在就自增不存在就=1；<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">session_start();</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span>(isset(<span class="variable">$_SESSION</span>[<span class="string">'views'</span>]))</span><br><span class="line">  <span class="variable">$_SESSION</span>[<span class="string">'views'</span>]=<span class="variable">$_SESSION</span>[<span class="string">'views'</span>]+1;</span><br><span class="line"></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  <span class="variable">$_SESSION</span>[<span class="string">'views'</span>]=1;</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"Views="</span>. <span class="variable">$_SESSION</span>[<span class="string">'views'</span>];</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure></p>
+<p>清空操作<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;?php</span><br><span class="line"><span class="built_in">unset</span>(<span class="variable">$_SESSION</span>[<span class="string">'views'</span>]);</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure></p>
+<p>or</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">session_destroy();</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -578,7 +602,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#创建cookies"><span class="nav-number">1.</span> <span class="nav-text">创建cookies</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Cookies"><span class="nav-number">1.</span> <span class="nav-text">Cookies</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建cookies"><span class="nav-number">1.1.</span> <span class="nav-text">创建cookies</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#读取Cookie"><span class="nav-number">1.2.</span> <span class="nav-text">读取Cookie</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Session"><span class="nav-number">2.</span> <span class="nav-text">Session</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#session的含义"><span class="nav-number">2.1.</span> <span class="nav-text">session的含义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开始PHPsession"><span class="nav-number">2.2.</span> <span class="nav-text">开始PHPsession</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#储存Session变量"><span class="nav-number">2.3.</span> <span class="nav-text">储存Session变量</span></a></li></ol></li></ol></div>
             
 
           </div>
