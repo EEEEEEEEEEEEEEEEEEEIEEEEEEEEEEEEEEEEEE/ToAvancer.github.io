@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://toavancer.github.io/"/>
-  <updated>2018-01-31T04:06:13.607Z</updated>
+  <updated>2018-02-02T04:07:05.381Z</updated>
   <id>https://toavancer.github.io/</id>
   
   <author>
@@ -21,16 +21,15 @@
     <link href="https://toavancer.github.io/2018/01/31/Lin/"/>
     <id>https://toavancer.github.io/2018/01/31/Lin/</id>
     <published>2018-01-31T02:39:59.000Z</published>
-    <updated>2018-01-31T04:06:13.607Z</updated>
+    <updated>2018-02-02T04:07:05.381Z</updated>
     
-    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><img src="/2018/01/31/Lin/林宪明.jpg" alt="林林的美貌prprpr"></p><p><a href="http://blog.csdn.net/sugar_rainbow/article/details/57415705" target="_blank" rel="noopener">博文插图方法</a><br><a href="http://blog.csdn.net/u013082989/article/details/70162293" target="_blank" rel="noopener">hexo博客-相册</a><br>这个有空再搞吧/擦汗<br>附图片代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![林林的美貌prprpr([填入相关文字的操作](Lin(文件夹名)/林宪明(图片名).jpg)</span><br></pre></td></tr></table></figure></p>]]></content>
+    <content type="html"><![CDATA[<script src="/assets/js/APlayer.min.js"> </script><p><img src="https://toavancer-1256051997.cos.ap-guangzhou.myqcloud.com/%E6%9E%97%E6%9E%97%E5%9B%BE%E9%9B%86/%E6%9E%97%E6%9E%97%E5%9B%BE%E9%9B%86/%E6%9E%97%E5%AE%AA%E6%98%8E%EF%BC%88%E6%8F%A1%E6%8B%B3%EF%BC%89.jpg" alt="林林的美貌prprpr"></p><p><a href="http://blog.csdn.net/sugar_rainbow/article/details/57415705" target="_blank" rel="noopener">博文插图方法</a><br><a href="http://blog.csdn.net/u013082989/article/details/70162293" target="_blank" rel="noopener">hexo博客-相册</a><br>这个有空再搞吧/擦汗<br>附图片代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![林林的美貌prprpr([填入相关文字的操作](Lin(文件夹名)/林宪明(图片名).jpg//或者图床的链接也可以的)</span><br></pre></td></tr></table></figure></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;/2018/01/31/Lin/林宪明.jpg&quot; alt=&quot;林林的美貌prprpr&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://blog.csdn.
+        &lt;script src=&quot;/assets/js/APlayer.min.js&quot;&gt; &lt;/script&gt;&lt;p&gt;&lt;img src=&quot;https://toavancer-1256051997.cos.ap-guangzhou.myqcloud.com/%E6%9E%97%E6%9E%97
       
     
     </summary>
