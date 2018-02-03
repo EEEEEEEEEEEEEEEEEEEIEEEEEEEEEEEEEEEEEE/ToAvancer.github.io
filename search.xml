@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[指针（犯错向）]]></title>
+    <url>%2F2018%2F02%2F03%2F%E6%8C%87%E9%92%88%2F</url>
+    <content type="text"><![CDATA[前言：PHP学得太枯燥了……完全静不下心学=_=那就只能摸C习题来逃避了（醒醒 不知道是不是我太久没写指针了……做第一道简单题我就GG了，很是尴尬= =题目：三个整数从小到大输出 12345678910111213141516171819202122232425#include&lt;stdio.h&gt; int main()&#123; int swap(int *p1,int *p2); int *p1,*p2,*p3; int a,b,c; printf("请输入三个整数"); scanf("%d",&amp;a); scanf("%d",&amp;b); scanf("%d",&amp;c); p1=&amp;a;p2=&amp;b;p3=&amp;c; if(a&gt;b)swap(p1,p2); if(b&gt;c)swap(p2,p3); if(a&gt;c)swap(p1,p3); printf("%d,%d,%d",a,b,c);//printf("%d,%d,%d",*p1,*p2,*p3);&#125;int swap(int *p1,int *p2)&#123; int *t; //答案： int t; t=p1; // t=*p1; p1=p2; // *p1=*p2; p2=t; // *p2=t;&#125; 输入：3 1 5显示结果：3 1 5我：？？？发生了什么经过答案对比才知道问题出在swap函数的编写上= =刚刚我还认为问题可能出现在令t为指针这个做法是错误的。实际上……我犯了几个错误： 1.指针之间的赋值要自带*号已知：指针储存的是地址信息。 * 为取值操作符 （刚看回笔记看到的作用- -我就懂了为什么要加号了）（看来我记忆退化得很严重啊（烟2.指针之间赋值前提是，两个指针都得有【确切的】地址信息123456789int swap(int *p1,int *p2)&#123; int *t; /*int a;t=&amp;a;//没有这行会GG我会乱说？*/ *t=*p1; *p1=*p2; *p2=*t; printf("%d%d%d\n",*p1,*p2,*t);&#125; 如果swap函数里的t是指针的话，就得赋确切的值…… 存疑printf(“%d,%d,%d”,a,b,c);abc出场也就被赋了个值……判了个断？？数值发生了改变的操作是最让我感到神奇的。]]></content>
+      <tags>
+        <tag>C</tag>
+        <tag>犯错向</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[PHP_E-mail]]></title>
+    <url>%2F2018%2F02%2F03%2FPHP-E-mail%2F</url>
+    <content type="text"><![CDATA[……算了Email系统先放一下吧要改php.ini……懒得折腾（躺]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[数组]]></title>
+    <url>%2F2018%2F02%2F03%2Fphp%E6%95%B0%E7%BB%84%2F</url>
+    <content type="text"><![CDATA[单纯记录代码（突然看书发现自己数组的写法并没有学得很好呢……（蹲1234567&lt;?php$str=array( "书籍"=&gt;array("文学","历史","豚骨拉面"), "体育用品"=&gt;array("m"=&gt;"football","n"=&gt;"basketball"), "水果"=&gt;array("橙子",8=&gt;"葡萄","苹果"));print_r($str);?&gt; 显示结果：Array ( [书籍] =&gt; Array ( [0] =&gt; 文学 [1] =&gt; 历史 [2] =&gt; 豚骨拉面 ) [体育用品] =&gt; Array ( [m] =&gt; football [n] =&gt; basketball ) [水果] =&gt; Array ( [0] =&gt; 橙子 [8] =&gt; 葡萄 [9] =&gt; 苹果 ) )]]></content>
+      <tags>
+        <tag>php</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[11.Cookies 与 Session]]></title>
-    <url>%2F2018%2F02%2F02%2Fphp%E5%AD%A6%E4%B9%A0%E4%B8%AD%2F</url>
-    <content type="text"><![CDATA[附：本文内容参照：W3SCHOOL&amp;PHP从入门到精（fang）通(qi) Cookies创建cookies根据书中的代码是这样的123456&lt;?phpsetcookie("TMCookie",'www.mrbccd.com');setcookie("TMCookie",'www.mrbccd.com',time()+60);setcookie("TMCookie",'www.mrbccd.com',time()+3600,"/tm/",".baidu.com",1);?&gt; 书：Cookies文件夹下会自动生成一个Cookie文件，名为administrator@1[1].txt,Cookie的有效期为60S 尴尬的是找不到这个文件我很心累（躺 读取Cookie12345678910111213141516&lt;?phpif(!isset($_COOKIE["vis"]))//检测cookie文件是否存在&#123; setcookie("vis",date("y-m-d H:i:s"));//设置一个Cookie变量 echo"欢迎您第一次访问网站！";&#125;else&#123; setcookie("vis",date("y-m-d H:i:s"),time()+60);//设置保存Cookie失效时间的变量 echo"您上次访问网站的时间为：".$_COOKIE["vis"]; echo"&lt;br&gt;";&#125;echo "时间为：".date("y-m-d H:i:s");?&gt; ##如何删除 cookie？当删除 cookie 时，您应当使过期日期变更为过去的时间点。 删除的例子：1234&lt;?php // set the expiration date to one hour agosetcookie("user", "", time()-3600);?&gt; Sessionsession的含义PHP session 变量用于存储有关用户会话的信息，或更改用户会话的设置。Session 变量保存的信息是单一用户的，并且可供应用程序中的所有页面使用。 PHP Session 变量当您运行一个应用程序时，您会打开它，做些更改，然后关闭它。这很像一次会话。计算机清楚你是谁。它知道你何时启动应用程序，并在何时终止。但是在因特网上，存在一个问题：服务器不知道你是谁以及你做什么，这是由于 HTTP 地址不能维持状态。 通过在服务器上存储用户信息以便随后使用，PHP session 解决了这个问题（比如用户名称、购买商品等）。不过，会话信息是临时的，在用户离开网站后将被删除。如果您需要永久储存信息，可以把数据存储在数据库中。 Session 的工作机制是：为每个访问者创建一个唯一的 id (UID)，并基于这个 UID 来存储变量。UID 存储在 cookie 中，亦或通过 URL 进行传导。 开始PHPsession在您把用户信息存储到 PHP session 中之前，首先必须启动会话。 注释：session_start() 函数必须位于 标签之前： 1234567&lt;?php session_start(); ?&gt;&lt;html&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt; 储存Session变量12345678910111213141516&lt;?phpsession_start();// store session data$_SESSION['views']=1;?&gt;&lt;html&gt;&lt;body&gt;&lt;?php//retrieve session dataecho "Pageviews=". $_SESSION['views'];?&gt;&lt;/body&gt;&lt;/html&gt; 输出结果为： 如果session存在就自增不存在就=1；12345678910&lt;?phpsession_start();if(isset($_SESSION['views'])) $_SESSION['views']=$_SESSION['views']+1;else $_SESSION['views']=1;echo "Views=". $_SESSION['views'];?&gt; 清空操作1234&lt;?phpunset($_SESSION['views']);?&gt; or 123&lt;?phpsession_destroy();?&gt;]]></content>
+    <url>%2F2018%2F02%2F02%2F11.Cookies%20%E4%B8%8E%20Session%2F</url>
+    <content type="text"><![CDATA[附：本文内容参照：W3SCHOOL&amp;PHP从入门到精（fang）通(qi)单纯作为笔记而已……=_= Cookies创建cookies根据书中的代码是这样的123456&lt;?phpsetcookie("TMCookie",'www.mrbccd.com');setcookie("TMCookie",'www.mrbccd.com',time()+60);setcookie("TMCookie",'www.mrbccd.com',time()+3600,"/tm/",".baidu.com",1);?&gt; 书：Cookies文件夹下会自动生成一个Cookie文件，名为administrator@1[1].txt,Cookie的有效期为60S 尴尬的是找不到这个文件我很心累（躺 读取Cookie12345678910111213141516&lt;?phpif(!isset($_COOKIE["vis"]))//检测cookie文件是否存在&#123; setcookie("vis",date("y-m-d H:i:s"));//设置一个Cookie变量 echo"欢迎您第一次访问网站！";&#125;else&#123; setcookie("vis",date("y-m-d H:i:s"),time()+60);//设置保存Cookie失效时间的变量 echo"您上次访问网站的时间为：".$_COOKIE["vis"]; echo"&lt;br&gt;";&#125;echo "时间为：".date("y-m-d H:i:s");?&gt; 如何删除 cookie？当删除 cookie 时，您应当使过期日期变更为过去的时间点。 删除的例子：1234&lt;?php // set the expiration date to one hour agosetcookie("user", "", time()-3600);?&gt; Sessionsession的含义PHP session 变量用于存储有关用户会话的信息，或更改用户会话的设置。Session 变量保存的信息是单一用户的，并且可供应用程序中的所有页面使用。 PHP Session 变量当您运行一个应用程序时，您会打开它，做些更改，然后关闭它。这很像一次会话。计算机清楚你是谁。它知道你何时启动应用程序，并在何时终止。但是在因特网上，存在一个问题：服务器不知道你是谁以及你做什么，这是由于 HTTP 地址不能维持状态。 通过在服务器上存储用户信息以便随后使用，PHP session 解决了这个问题（比如用户名称、购买商品等）。不过，会话信息是临时的，在用户离开网站后将被删除。如果您需要永久储存信息，可以把数据存储在数据库中。 Session 的工作机制是：为每个访问者创建一个唯一的 id (UID)，并基于这个 UID 来存储变量。UID 存储在 cookie 中，亦或通过 URL 进行传导。 开始PHPsession在您把用户信息存储到 PHP session 中之前，首先必须启动会话。 注释：session_start() 函数必须位于 标签之前： 12345&lt;?php session_start(); ?&gt;&lt;html&gt;……&lt;/html&gt; 储存Session变量12345678910111213141516&lt;?phpsession_start();// store session data$_SESSION['views']=1;?&gt;&lt;html&gt;&lt;body&gt;&lt;?php//retrieve session dataecho "Pageviews=". $_SESSION['views'];?&gt;&lt;/body&gt;&lt;/html&gt; 输出结果为： 如果session存在就自增、不存在就=1；12345678910&lt;?phpsession_start();if(isset($_SESSION['views'])) $_SESSION['views']=$_SESSION['views']+1;else $_SESSION['views']=1;echo "Views=". $_SESSION['views'];?&gt; 清空操作1234&lt;?phpunset($_SESSION['views']);?&gt; 注意：使用unset函数，要注意$_SESSION数组中某元素不能省略，即不可以一次注销整个数组，这样会禁止整个会话的功能.而且也没有办法注册回来 删除多个会话把一个空格数组赋值给$_session1$_SESSION = array(); 结束当前会话123&lt;?phpsession_destroy();?&gt; Session设置时间作用：一般用来对登录时间的保存 session_set_cookie_params()函数必须在session_start()之前调用！！不推荐使用session_set_cookie_params()函数，因为一些浏览器可能会GG掉。所以一般手动设置失效时间。 1234567&lt;?phpsession_start();$time=1*60;//Session失效时间setcookie(session_name(),session_id(), time()+$time,"/");//使用setcookie()手动设置Session失效时间$_SESSION['user']='mr';?&gt; 书本P209大概讲的是客户端禁止Cookie的情况= = 嗯之后的操作我已经没耐心看了……先马克一波吧……大概内容是session的高级应用=_=]]></content>
       <tags>
         <tag>php</tag>
       </tags>
@@ -11,7 +33,7 @@
   <entry>
     <title><![CDATA[时间规划]]></title>
     <url>%2F2018%2F01%2F30%2F%E6%97%B6%E9%97%B4%E8%A7%84%E5%88%92%2F</url>
-    <content type="text"><![CDATA[2018020213:08先去睡个觉把生物钟调回来吧。14:20 开始工作 并且手残把主题改了一下把留言板的音乐改没了QAQ16:48 改aplayer播放器的东西改不动（躺）只能用网易云的播放器凑合着用了（躺好心疼QAQ！！本来之前那个播放器我弄得贼漂亮，特地弄了lrc文件QUQ17:20 完全没有学习的念头（虽然打开了W3SCHOOL网站]]></content>
+    <content type="text"><![CDATA[2018020213:08先去睡个觉把生物钟调回来吧。14:20 开始工作 并且手残把主题改了一下把留言板的音乐改没了QAQ16:48 改aplayer播放器的东西改不动（躺）只能用网易云的播放器凑合着用了（躺好心疼QAQ！！本来之前那个播放器我弄得贼漂亮，特地弄了lrc文件QUQ17:20 完全没有学习的念头（虽然打开了W3SCHOOL网站23:00-01:00 看同人文= =和豚骨拉面 201802037:30-10:00……关心国家队的事吃国家队的瓜……10:00-13:00 看博多豚骨拉面的同人文以及各种保存啥的第一次知道林宪明的原名是林猫梅……救命好可爱啊www15:00 吃完豚骨拉面最新的漫画我终于终于要开始工作了……（大概]]></content>
       <categories>
         <category>规划,杂</category>
       </categories>
