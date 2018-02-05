@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="C,犯错向," />
+  <meta name="keywords" content="Hexo,加密" />
 
 
 
@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="前言：PHP学得太枯燥了……完全静不下心学=_=那就只能摸C习题来逃避了（醒醒 不知道是不是我太久没写指针了……做第一道简单题我就GG了，很是尴尬= =题目：三个整数从小到大输出 12345678910111213141516171819202122232425#include&amp;lt;stdio.h&amp;gt;	int main()&amp;#123;	int swap(int *p1,int *p2);">
-<meta name="keywords" content="C,犯错向">
+<meta name="description" content="密码相关：birthday">
+<meta name="keywords" content="Hexo,加密">
 <meta property="og:type" content="article">
 <meta property="og:title" content="指针（犯错向）">
 <meta property="og:url" content="https://toavancer.github.io/2018/02/03/指针/index.html">
 <meta property="og:site_name" content="Welcome to the world of ToAvancer">
-<meta property="og:description" content="前言：PHP学得太枯燥了……完全静不下心学=_=那就只能摸C习题来逃避了（醒醒 不知道是不是我太久没写指针了……做第一道简单题我就GG了，很是尴尬= =题目：三个整数从小到大输出 12345678910111213141516171819202122232425#include&amp;lt;stdio.h&amp;gt;	int main()&amp;#123;	int swap(int *p1,int *p2);">
+<meta property="og:description" content="密码相关：birthday">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-03T15:55:22.167Z">
+<meta property="og:updated_time" content="2018-02-04T14:33:58.906Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="指针（犯错向）">
-<meta name="twitter:description" content="前言：PHP学得太枯燥了……完全静不下心学=_=那就只能摸C习题来逃避了（醒醒 不知道是不是我太久没写指针了……做第一道简单题我就GG了，很是尴尬= =题目：三个整数从小到大输出 12345678910111213141516171819202122232425#include&amp;lt;stdio.h&amp;gt;	int main()&amp;#123;	int swap(int *p1,int *p2);">
+<meta name="twitter:description" content="密码相关：birthday">
 
 
 
@@ -127,6 +127,16 @@
 
 
 
+<script>
+    (function(){
+        if('0917'){
+            if (prompt('请输入文章密码') !== '0917'){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
 
   <title>指针（犯错向） | Welcome to the world of ToAvancer</title>
   
@@ -338,8 +348,8 @@
 			  
   <span class="post-updated">
     &nbsp; | &nbsp; 更新于
-    <time itemprop="dateUpdated" datetime="2018-02-03T23:55:22+08:00" content="2018-02-03">
-      2018-02-03
+    <time itemprop="dateUpdated" datetime="2018-02-04T22:33:58+08:00" content="2018-02-04">
+      2018-02-04
     </time>
   </span>
 
@@ -369,8 +379,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C语言，指针/" itemprop="url" rel="index">
-                    <span itemprop="name">C语言，指针</span>
+                  <a href="/categories/C语言/" itemprop="url" rel="index">
+                    <span itemprop="name">C语言</span>
                   </a>
                 </span>
 
@@ -403,6 +413,10 @@
           
 
           
+              <div class="post-description">
+                  密码相关：birthday
+              </div>
+          
 
         </div>
       </header>
@@ -429,7 +443,12 @@
 <h3 id="存疑·解决"><a href="#存疑·解决" class="headerlink" title="存疑·解决"></a>存疑·解决</h3><p>疑问：printf(“%d,%d,%d”,a,b,c);<br>abc出场也就被赋了个值……判了个断？？<br>数值发生了改变的操作是最让我感到神奇的……<br>p1p2拿了ab地址数值去换，最多结果就是p1和p2手里拿的地址和数值变更了。但是ab数值发生改动这个操作怕是有点骚哦？？？<br>解决：好吧和小伙伴讨论了一下：）是我理解出现问题了<br>在swap函数里面，a和b是出现了数值变动的。</p>
 <p><font color="009933">eg:</font><br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*p1=*p2</span><br></pre></td></tr></table></figure></p>
 <p>就是说：<br>(<em>p1==a==3) = (</em>p2==b==1)<br>也就是说*p1不只是代表a的数值，拿出来的还有变量a。一旦交换，变量a的数值也发生了变动。</p>
-
+<p>感想：感觉我指针学了还还了学不断反复没有理解学好（躺</p>
+<p>#比较字符串大小<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include&lt;stdio.h&gt;</span></span><br><span class="line"><span class="comment">#include&lt;string.h&gt;</span></span><br><span class="line">	</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	int compare(char *p1,char *p2); </span><br><span class="line">	char str1[50],str2[50],str3[50];</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"请输入第一个字符串"</span>); </span><br><span class="line">	gets(str1); </span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"请输入第二个字符串"</span>); </span><br><span class="line">	gets(str2);</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"请输入第三个字符串"</span>); </span><br><span class="line">	gets(str3);</span><br><span class="line">	compare(str1,str2);</span><br><span class="line">	compare(str1,str3);</span><br><span class="line">			puts(str1);</span><br><span class="line">			puts(str2);</span><br><span class="line">	puts(str3);</span><br><span class="line">	compare(str2,str3);</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"结果分界线\n"</span>); </span><br><span class="line">	puts(str1);</span><br><span class="line">	puts(str2);</span><br><span class="line">	puts(str3);</span><br><span class="line">	<span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int compare(char *p1,char *p2)</span><br><span class="line">&#123;</span><br><span class="line">	int i=0;</span><br><span class="line">	char t;</span><br><span class="line">	<span class="keyword">while</span>(p1[i]!=<span class="string">'\0'</span>&amp;&amp;p2[i]!=<span class="string">'\0'</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(p1[i]&lt;p2[i])</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(p1[i]==p2[i])&#123;&#125;</span><br><span class="line">		<span class="keyword">else</span> <span class="keyword">if</span>(p1[i]&gt;p2[i])</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">for</span>(i=0;p1[i]!=<span class="string">'\0'</span>&amp;&amp;p2[i]!=<span class="string">'\0'</span>;i++)</span><br><span class="line">			&#123;</span><br><span class="line">		t=p2[i];</span><br><span class="line">		p2[i]=p1[i];</span><br><span class="line">		p1[i]=t;	</span><br><span class="line">			&#125;	</span><br><span class="line">			<span class="built_in">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		i++; </span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>一开始忘了什么getsputs啊字符串的用法又返回去看了……<br>解决了第一题比大小……感觉这题就变得轻松一点了<br>嗯答案直接用strcmp函数去做……果然代码看起来比我自己写要简单= =</p>
+<h1 id="3-输入10个整数，将最小的数与第一个数对换，把最大的数与最后一个数对换，写三个函数：①输入10个数②进行处理③输出10个数"><a href="#3-输入10个整数，将最小的数与第一个数对换，把最大的数与最后一个数对换，写三个函数：①输入10个数②进行处理③输出10个数" class="headerlink" title="3.输入10个整数，将最小的数与第一个数对换，把最大的数与最后一个数对换，写三个函数：①输入10个数②进行处理③输出10个数"></a>3.输入10个整数，将最小的数与第一个数对换，把最大的数与最后一个数对换，写三个函数：①输入10个数②进行处理③输出10个数</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include&lt;stdio.h&gt;</span></span><br><span class="line"><span class="comment">#include&lt;string.h&gt;</span></span><br><span class="line">	</span><br><span class="line">	int input(int *a,int n)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"请输入10个整数"</span>);</span><br><span class="line">		int i;</span><br><span class="line">		<span class="keyword">for</span>(i=0;i&lt;n;i++)</span><br><span class="line">		&#123;</span><br><span class="line">			scanf(<span class="string">"%d"</span>,&amp;a[i]);</span><br><span class="line">		&#125; </span><br><span class="line">		<span class="built_in">return</span> 0;</span><br><span class="line">	&#125;</span><br><span class="line">	int output(int *a,int n)</span><br><span class="line">	&#123;</span><br><span class="line">		int i;</span><br><span class="line">		<span class="keyword">for</span>(i=0;i&lt;n;i++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,a[i]);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">return</span> 0;</span><br><span class="line">	&#125;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	int swap(int *a);</span><br><span class="line">	int a[10];</span><br><span class="line">	input(a,10);</span><br><span class="line">	int i;</span><br><span class="line">		swap(a);</span><br><span class="line">		output(a,10); </span><br><span class="line">	</span><br><span class="line">	<span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br><span class="line">int swap(int *a)</span><br><span class="line">&#123;</span><br><span class="line">	int *max,*min;</span><br><span class="line">	int t;</span><br><span class="line">	int i;</span><br><span class="line">	</span><br><span class="line">	max=&amp;a[0];</span><br><span class="line">	min=&amp;a[0];</span><br><span class="line">	<span class="keyword">for</span>(i=0;i&lt;10;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(*max&lt;a[i])</span><br><span class="line">		&#123;</span><br><span class="line">			max=&amp;a[i];</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(*min&gt;a[i])</span><br><span class="line">		&#123;</span><br><span class="line">			min=&amp;a[i];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	t=*min;</span><br><span class="line">	min=&amp;a[0];</span><br><span class="line">	a[0]=t;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,t);</span><br><span class="line">	t=*max;</span><br><span class="line">	max=&amp;a[10];</span><br><span class="line">	a[10]=t;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,a[10]);</span><br><span class="line"></span><br><span class="line">/*	t=a[10];</span><br><span class="line">	t=*min;</span><br><span class="line">	*min=&amp;a[10];</span><br><span class="line">	</span><br><span class="line">	t=&amp;a[0];</span><br><span class="line">	*t=*max;</span><br><span class="line">	*max=&amp;;*/</span><br><span class="line">	<span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>把数组写成a[10]和在交换过程卡了N久的我也是没救了(躺)<br>而且上面这个swap函数看似有三个瓶子……实际上只有2个：）<br>正解：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include&lt;stdio.h&gt;</span></span><br><span class="line"><span class="comment">#include&lt;string.h&gt;</span></span><br><span class="line">	</span><br><span class="line">	int input(int *a,int n)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"请输入10个整数"</span>);</span><br><span class="line">		int i;</span><br><span class="line">		<span class="keyword">for</span>(i=0;i&lt;n;i++)</span><br><span class="line">		&#123;</span><br><span class="line">			scanf(<span class="string">"%d"</span>,&amp;a[i]);</span><br><span class="line">		&#125; </span><br><span class="line">		<span class="built_in">return</span> 0;</span><br><span class="line">	&#125;</span><br><span class="line">	int output(int *a,int n)</span><br><span class="line">	&#123;</span><br><span class="line">		int i;</span><br><span class="line">		<span class="keyword">for</span>(i=0;i&lt;n;i++)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,a[i]);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">return</span> 0;</span><br><span class="line">	&#125;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	int swap(int *a);</span><br><span class="line">	int a[10];</span><br><span class="line">	input(a,10);</span><br><span class="line">	int i;</span><br><span class="line">		swap(a);</span><br><span class="line">		output(a,10); </span><br><span class="line">	</span><br><span class="line">	<span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br><span class="line">int swap(int *a)</span><br><span class="line">&#123;</span><br><span class="line">	int *max,*min;</span><br><span class="line">	int *p1,*p2;</span><br><span class="line">	int i,t;</span><br><span class="line">	</span><br><span class="line">	p1=&amp;a[0];p2=&amp;a[9];</span><br><span class="line">	max=&amp;a[0];</span><br><span class="line">	min=&amp;a[0];</span><br><span class="line">	<span class="keyword">for</span>(i=0;i&lt;10;i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(*max&lt;=a[i])</span><br><span class="line">		&#123;</span><br><span class="line">			max=&amp;a[i];</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(*min&gt;=a[i])</span><br><span class="line">		&#123;</span><br><span class="line">			min=&amp;a[i];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	t=*p1;</span><br><span class="line">	*p1=*min;</span><br><span class="line">	*min=t;</span><br><span class="line">	t=*p2;</span><br><span class="line">	*p2=*max;</span><br><span class="line">	*max=t;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -449,6 +468,8 @@
             <a href="/tags/C/" rel="tag"># C</a>
           
             <a href="/tags/犯错向/" rel="tag"># 犯错向</a>
+          
+            <a href="/tags/指针/" rel="tag"># 指针</a>
           
         </div>
       
@@ -565,7 +586,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -576,7 +597,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -611,7 +632,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言："><span class="nav-number">1.</span> <span class="nav-text">前言：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-指针之间的赋值要自带-号"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.指针之间的赋值要自带*号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-指针之间赋值前提是，两个指针都得有【确切的】地址信息"><span class="nav-number">1.0.2.</span> <span class="nav-text">2.指针之间赋值前提是，两个指针都得有【确切的】地址信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#存疑·解决"><span class="nav-number">1.0.3.</span> <span class="nav-text">存疑·解决</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言："><span class="nav-number">1.</span> <span class="nav-text">前言：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-指针之间的赋值要自带-号"><span class="nav-number">1.0.1.</span> <span class="nav-text">1.指针之间的赋值要自带*号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-指针之间赋值前提是，两个指针都得有【确切的】地址信息"><span class="nav-number">1.0.2.</span> <span class="nav-text">2.指针之间赋值前提是，两个指针都得有【确切的】地址信息</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#存疑·解决"><span class="nav-number">1.0.3.</span> <span class="nav-text">存疑·解决</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-输入10个整数，将最小的数与第一个数对换，把最大的数与最后一个数对换，写三个函数：①输入10个数②进行处理③输出10个数"><span class="nav-number">2.</span> <span class="nav-text">3.输入10个整数，将最小的数与第一个数对换，把最大的数与最后一个数对换，写三个函数：①输入10个数②进行处理③输出10个数</span></a></li></ol></div>
             
 
           </div>
