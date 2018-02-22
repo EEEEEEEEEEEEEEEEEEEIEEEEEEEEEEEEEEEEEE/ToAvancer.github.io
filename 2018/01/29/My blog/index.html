@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="Welcome to the world of ToAvancer">
 <meta property="og:description" content="附：刚接触网页制作的萌新= =各种对小坑（虽然多半是自己做的大死）的吐槽……并没有觉得dalao们的教程做得不好，只是为了加个功能翻了不少教程走了不少歪路= =可能因为有些dalao下的hexo和next主题和我下的版本略有不同，所以会出现教程的文件而我没有的尴尬情况==……此建博教程仅供参考，至少20180128-20180131的这段时间我是这样搭的== 请dalao轻喷谢谢QAQ我基本是看">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-08T00:47:08.911Z">
+<meta property="og:updated_time" content="2018-02-22T13:35:15.169Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="关于用hexo和github建立博客的相关收录">
 <meta name="twitter:description" content="附：刚接触网页制作的萌新= =各种对小坑（虽然多半是自己做的大死）的吐槽……并没有觉得dalao们的教程做得不好，只是为了加个功能翻了不少教程走了不少歪路= =可能因为有些dalao下的hexo和next主题和我下的版本略有不同，所以会出现教程的文件而我没有的尴尬情况==……此建博教程仅供参考，至少20180128-20180131的这段时间我是这样搭的== 请dalao轻喷谢谢QAQ我基本是看">
@@ -348,8 +348,8 @@
 			  
   <span class="post-updated">
     &nbsp; | &nbsp; 更新于
-    <time itemprop="dateUpdated" datetime="2018-02-08T08:47:08+08:00" content="2018-02-08">
-      2018-02-08
+    <time itemprop="dateUpdated" datetime="2018-02-22T21:35:15+08:00" content="2018-02-22">
+      2018-02-22
     </time>
   </span>
 
@@ -453,7 +453,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;font size=4 &gt; 这里输入文字，自定义大小 &lt;/font&gt;</span><br><span class="line"></span><br><span class="line">&lt;font color=<span class="string">"#FF0000"</span>&gt; 这里输入文字，自定义颜色的字体 &lt;/font&gt;</span><br></pre></td></tr></table></figure>
 <p>效果：</p>
 <p><font size="4"> 这里输入文字，自定义大小 </font></p>
-<p><font color="#FF0000"> 这里输入文字，自定义颜色的字体 </font><br>不过在PHPstrom的编译窗里就看不到颜色变动了=_=</p>
+<p><font color="#FF0000"> 这里输入文字，自定义颜色的字体 </font><br>不过在PHPstrom的编译窗里就看不到颜色变动了=_=<br>[size=6][font=黑体][backcolor=Yellow][i][u][b][color=Red][p=30, 2, left]一段话综合了字体大小为6、型号黑体、黄色背景、红色、<br>[img]static/image/hrline/line2.png[/img]<br>[斜体、下划线、加粗、自动排版[/p][/color][/b][/u][/i][/backcolor][/font][/size]</p>
 <h1 id="文章设置密码方式"><a href="#文章设置密码方式" class="headerlink" title="文章设置密码方式"></a>文章设置密码方式</h1><p>参考<a href="http://blog.csdn.net/Lancelot_Lewis/article/details/53422901" target="_blank" rel="noopener">Hexo文章简单加密访问</a></p>
 <p>在<font color="009933">themes-&gt;next-&gt;layout-&gt;_partials-&gt;head.swig文件</font>中加入<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    (<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="string">'&#123;&#123; page.password &#125;&#125;'</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span> (prompt(<span class="string">'请输入文章密码'</span>) !== <span class="string">'&#123;&#123; page.password &#125;&#125;'</span>)&#123;</span><br><span class="line">                alert(<span class="string">'密码错误！'</span>);</span><br><span class="line">                history.back();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
 <p>文章头部如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">---</span><br><span class="line">title: Hexo文章简单加密访问</span><br><span class="line">date: 2016-12-01 10:45:29</span><br><span class="line">tags: hexo</span><br><span class="line">categories: 博客</span><br><span class="line">keywords:</span><br><span class="line">    - Hexo</span><br><span class="line">    - 加密</span><br><span class="line">description: 文章访问密码：password</span><br><span class="line">password: password</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
