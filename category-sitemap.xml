@@ -7,13 +7,6 @@
     </url>
 
     <url>
-        <loc>https://toavancer.github.io/categories/%E6%B8%B8%E6%88%8F/</loc>
-        <lastmod>2018-02-05T05:05:02.210Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://toavancer.github.io/categories/C%E8%AF%AD%E8%A8%80/</loc>
         <lastmod>2018-02-08T00:47:05.305Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -44,6 +37,13 @@
     <url>
         <loc>https://toavancer.github.io/categories/%E5%8D%95%E7%89%87%E6%9C%BA/</loc>
         <lastmod>2018-03-22T14:10:21.012Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://toavancer.github.io/categories/%E6%B8%B8%E6%88%8F/</loc>
+        <lastmod>2018-04-30T14:24:23.311Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
