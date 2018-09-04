@@ -7,6 +7,22 @@
     </url>
 
     <url>
+        <loc>https://toavancer.github.io/2018/01/29/My%20blog/</loc>
+        <lastmod>2018-09-04T09:28:41.153Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://toavancer.github.io/2018/02/03/PHP-E-mail/</loc>
+        <lastmod>2018-09-04T09:19:40.827Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://toavancer.github.io/2018/06/18/%E5%AB%81%E5%85%A5%E9%AB%98%E9%97%A8%E7%9A%84%E7%94%B7%E4%BA%BA/</loc>
         <lastmod>2018-06-18T11:46:00.940Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -49,14 +65,6 @@
     <url>
         <loc>https://toavancer.github.io/2018/03/03/%E6%91%B8%E5%8D%95%E7%89%87%E6%9C%BA%E5%AD%A6%E4%B9%A0%E5%8E%86%E7%A8%8B/</loc>
         <lastmod>2018-03-22T14:10:21.012Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://toavancer.github.io/2018/01/29/My%20blog/</loc>
-        <lastmod>2018-03-13T07:38:40.387Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
