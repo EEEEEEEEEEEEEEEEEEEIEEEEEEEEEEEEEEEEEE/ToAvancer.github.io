@@ -8,7 +8,15 @@
 
     <url>
         <loc>https://toavancer.github.io/2018/01/29/My%20blog/</loc>
-        <lastmod>2018-09-04T09:28:41.153Z</lastmod>
+        <lastmod>2018-09-04T13:03:46.553Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://toavancer.github.io/2018/09/04/%E6%9A%91%E5%81%87%E6%AC%A0%E5%80%BA%E6%9C%AC/</loc>
+        <lastmod>2018-09-04T13:03:26.707Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
